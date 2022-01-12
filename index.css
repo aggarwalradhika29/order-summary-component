@@ -1,0 +1,171 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* ### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+:root
+{
+    --pale-blue: hsl(225,100%,94%);
+    --bright-blue: hsl(245,75%,52%);
+    --very-pale-blue: hsl(225,100%,98%);
+    --desat-blue: hsl(224,23%,55%);
+    --dark-blue: hsl(223,47%,23%);
+}
+
+body
+{
+    background: hsl(225, 100%, 94%) url(images/pattern-background-desktop.svg)repeat-x top;
+}
+
+.container
+{
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 20px;
+}
+
+.container img
+{
+    border-radius: 20px;
+    padding-bottom: 35px;
+    width: 400px;
+}
+
+.container h2
+{
+    color: var(--dark-blue);
+    text-align: center;
+
+}
+
+.container p
+{
+    text-align: center;
+    color: var(--desat-blue);
+    font-size: 15px;
+    padding: 15px 60px;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+}
+
+.plan-box
+{
+    padding-top: 10px;
+    margin: 0 auto;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    height: 85px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.plan-box img
+{
+    position: absolute;
+    margin-left: 1.3rem;
+    margin-top: 0.6em;
+    width: 43px;
+    height: 80px;
+}
+
+.plan-box h4
+{
+    font-weight: 900;
+    font-size: 14px;
+    margin-top: 0.7em;
+    margin-left: 5rem;
+    padding-bottom: 5px;
+    color: var(--dark-blue);
+}
+
+.plan-box span
+{
+    margin-left: 5rem;
+    color: var(--desat-blue);
+    font-size: 14px;
+}
+
+#sec2 p
+{
+    color: var(--bright-blue);
+    text-decoration: underline;
+    position: relative;
+    font-weight: 700;
+    font-size: 13px;
+    margin-left: 1.7rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+#sec2 p:hover
+{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+button
+{
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    width: 320px;
+    margin: 1.7rem 2.5rem;
+    padding: 0.8rem 4em;
+    border-radius: 10px;
+    border: var(--bright-blue);
+    box-shadow: 0 1rem 1rem var(--pale-blue);
+    cursor: pointer;
+}
+
+button:hover
+{
+    opacity: 0.7;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+#cancel
+{
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 13.5px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+#cancel:hover
+{
+    color: var(--dark-blue);
+}
+
+@media (max-width:400px)
+{
+    body
+    {
+        background: hsl(225, 100%, 94%) url(images/pattern-background-mobile.svg)repeat-x top;
+    }
+}
